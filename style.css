@@ -35,7 +35,9 @@ body {
 
 video {
   border-radius: 5px;
-
+  max-width: 100%;
+  /* 100% width - of its parent element or container */
+  height: auto;
 }
 
 /* Containers */
@@ -207,6 +209,10 @@ select > option {
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
+  .player {
+    min-width: 0;
+    max-width: 95vw;
+  }
 
 
   .fas {
